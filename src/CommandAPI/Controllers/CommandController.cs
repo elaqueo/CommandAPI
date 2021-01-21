@@ -97,6 +97,7 @@ namespace CommandAPI.Controllers
         [HttpDelete("{id}")]
         public ActionResult DeleteCommand(int id)
         {
+            // Random change
             var commandModel = _repository.GetCommandById(id);
             if (commandModel == null)
             {
